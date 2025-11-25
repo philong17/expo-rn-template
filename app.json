@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "YourAppName",
+    "slug": "your-app-name",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/shared/assets/images/icon.png",
+    "scheme": "yourapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.yourapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/shared/assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.yourapp"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#2A93FF",
+          "image": "./src/shared/assets/images/splash.png",
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "platforms": ["ios", "android"],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
